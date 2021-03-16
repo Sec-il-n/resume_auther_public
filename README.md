@@ -1,4 +1,4 @@
-# resume_auther_public# Resume
+# Resume
 ## Index
 - [Basic Informations](#basic-informations)
 - [Skills](#skills)
