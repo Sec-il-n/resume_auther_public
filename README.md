@@ -27,7 +27,7 @@ Sec-il-n<br>
 
 ## Skills
 
-#### Language
+#### Languages
 
 <table>
   <thead>
