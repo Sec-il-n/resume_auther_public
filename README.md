@@ -20,9 +20,9 @@ Sec-il-n<br>
 <is9405969@gmail.com>
 
 - **自身を体現する言葉、好みの傾向**<br>
-努力家　不器用　試行錯誤　不屈　継続力　論理的　没頭　最下位　技術力　専門職　睡眠　黒にんにく　自然音　腰痛　<br><br>
+努力　不器用　試行錯誤　不屈　継続力　没頭　傾倒　シンプル　論理的　技術力　専門職　睡眠　黒にんにく　自然音　<br><br>
 - **嫌いな言葉、傾向**<br>
-根回し　年功序列　外的要因　視覚的　総合職　女子力　動物性食品　嗜好品　騒音　欲求　SNS <br>
+根回し　年功序列　外的要因　視覚的　総合職　女子力　動物性食品　嗜好品　騒音　欲求　<br>
 
 
 ## Skills
@@ -30,196 +30,272 @@ Sec-il-n<br>
 #### Language
 
 <table>
-  <tr>
-    <td><strong>Ruby</strong></td>
-    <td>約３ヶ月</td>
-    <td>ポートフォリオにメインで使用</td>
-    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
-  </tr>
-  <tr>
-    <td><strong>JavaScript</strong></td>
-    <td>約１ヶ月</td>
-    <td>ポートフォリオに一部使用</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>HTML5 / CSS<strong></td>
-    <td>total 約３ヶ月</td>
-    <td></td>
-    <td></td>
-  </tr><tr>
-    <td><strong>Java<strong></td>
-    <td>約半年</td>
-    <td>最も初めに勉強を始めた言語</td>
-    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
-  </tr>
-  <tr>
-    <td><strong>JSP & Servlet<strong></td>
-    <td>約半年</td>
-    <td>初期ポートフォリオ作成時使用</td>
-    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
-  </tr>
-  <tr>
-    <td><strong>C<strong></td>
-    <td>約２ヶ月</td>
-    <td>就業準備の為学習（未使用） 。<br>その後、基本情報技術者の午後問題で勉強</td>
-    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
-  </tr>
-  <tr>
-    <td><strong>ExcelVBA<strong></td>
-    <td>約１ヶ月</td>
-    <td>入社時研修</td>
-    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Language</th>
+      <th>習得期間</th>
+      <th>備考</th>
+      <th>参考文献</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td><strong>Ruby</strong></td>
+      <td>約３ヶ月</td>
+      <td>ポートフォリオにメインで使用</td>
+      <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+    </tr>
+    <tr>
+      <td><strong>JavaScript</strong></td>
+      <td>約１ヶ月</td>
+      <td>ポートフォリオに一部使用</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>HTML5 / CSS<strong></td>
+      <td>total 約３ヶ月</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Java<strong></td>
+      <td>約半年</td>
+      <td>最も初めに勉強を始めた言語</td>
+      <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+    </tr>
+    <tr>
+      <td><strong>JSP & Servlet、JSTL、 EL式<strong></td>
+      <td>約半年</td>
+      <td>初期ポートフォリオ作成時使用</td>
+      <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+    </tr>
+    <tr>
+      <td><strong>C<strong></td>
+      <td>約２ヶ月</td>
+      <td>就業準備の為学習（未使用） 。<br>その後、基本情報技術者の午後問題で勉強</td>
+      <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+    </tr>
+    <tr>
+      <td><strong>ExcelVBA<strong></td>
+      <td>約１ヶ月</td>
+      <td>入社時研修</td>
+      <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+    </tr>
+  </tbody>
 </table>
+ 
+        
+
 
 #### FrameWorks
 
 <table>
-  <tr>
-    <td><strong>Ruby on Rails<strong></td>
-    <td>約４ヶ月</td>
-    <td>ポートフォリオにメインで使用</td>
-  </tr>
-  <tr>
-    <td><strong>JQuery<strong></td>
-    <td>-</td>
-    <td>ポートフォリオに一部使用</td>
-  </tr>
-  <tr>
-    <td><strong>Vue.js<strong></td>
-    <td>-</td>
-    <td>スクールカリキュラム</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>FrameWorks</th>
+      <th>習得期間</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>Ruby on Rails<strong></td>
+      <td>約４ヶ月</td>
+      <td>ポートフォリオにメインで使用</td>
+    </tr>
+    <tr>
+      <td><strong>JQuery<strong></td>
+      <td>-</td>
+      <td>ポートフォリオに一部使用</td>
+    </tr>
+    <tr>
+      <td><strong>Vue.js<strong></td>
+      <td>-</td>
+      <td>スクールカリキュラム</td>
+    </tr>
+  </tbody> 
 </table>
 
 
 
 #### RDB
 <table>
-  <tr>
-    <td><strong>PostgreSQL<strong></td>
-    <td>都度</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>MySQL<strong></td>
-    <td>都度</td>
-    <td>初期ポートフォリオ作成時使用</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>RDB</th>
+      <th>習得期間</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>PostgreSQL<strong></td>
+      <td>都度</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>MySQL<strong></td>
+      <td>都度</td>
+      <td>初期ポートフォリオ作成時使用</td>
+    </tr>
+  </tbody>
 </table>
 
 
 #### TestFrameWorks
 <table>
-  <tr>
-    <td><strong>RSpec<strong></td>
-    <td>約1ヶ月</td>
-    <td>ポートフォリオに使用</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>JUnit<strong></td>
-    <td>約2ヶ月</td>
-    <td>初期ポートフォリオ作成時使用</td>
-    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
-  </tr>
+  <thead>
+    <tr>
+      <th>TestFrameWorks</th>
+      <th>習得期間</th>
+      <th>備考</th>
+      <th>参考文献</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>RSpec、Capybara<strong></td>
+      <td>約1ヶ月</td>
+      <td>ポートフォリオに使用</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>JUnit、 DBUnit<strong></td>
+      <td>約2ヶ月</td>
+      <td>初期ポートフォリオ作成時使用</td>
+      <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+    </tr>
+    <tr>
+      <td><strong>Selenium<strong></td>
+      <td>-</td>
+      <td>都度</td>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
 
 
 #### CD CI
 <table>
-  <tr>
-    <td><strong>CircleCI<strong></td>
-    <td>約半月</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>Jenkins<strong></td>
-    <td>-</td>
-    <td>独学</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>CD CI</th>
+      <th>習得期間</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>CircleCI<strong></td>
+      <td>約半月</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>Jenkins<strong></td>
+      <td>-</td>
+      <td>独学</td>
+    </tr>
+  </tbody> 
 </table>
 
 
-#### AWS
+  #### AWS
 <table>
-  <tr>
-    <td><strong>VPC<strong></td>
-    <td>-</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>S3<strong></td>
-    <td>都度</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>EC2<strong></td>
-    <td>約半月</td>
-    <td>スクール、ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>SES<strong></td>
-    <td>-</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>AWS</th>
+      <th>習得期間</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>VPC<strong></td>
+      <td>-</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>S3<strong></td>
+      <td>都度</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>EC2<strong></td>
+      <td>約半月</td>
+      <td>スクール、ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>SES<strong></td>
+      <td>-</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+  </tbody> 
 </table>
 
 
 
 #### TheOthers
 <table>
-  <tr>
-    <td><strong>GitHub<strong></td>
-    <td>都度</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>Nginx<strong></td>
-    <td>約半月</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>Unicorn<strong></td>
-    <td>約半月</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>Capistrano 3<strong></td>
-    <td>約半月</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>Docker / docker-compose<strong></td>
-    <td>約半月</td>
-    <td>ポートフォリオに使用</td>
-  </tr>
-  <tr>
-    <td><strong>Terraform<strong></td>
-    <td>-</td>
-    <td>就業準備の為学習（未使用）</td>
-  </tr>
-  <tr>
-    <td><strong>Pro＊c<strong></td>
-    <td>-</td>
-    <td>就業準備の為学習（未使用）、 独学</td>
-  </tr>
-  <tr>
-    <td><strong>Heroku<strong></td>
-    <td>都度</td>
-    <td>初期ポートフォリオ作成時使用</td>
-  </tr>
-  <tr>
-    <td><strong>Apache<strong></td>
-    <td>都度</td>
-    <td>初期ポートフォリオ作成時使用</td>
-  </tr>
-  <tr>
-    <td><strong>Tomcat<strong></td>
-    <td>都度</td>
-    <td>初期ポートフォリオ作成時使用</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>その他</th>
+      <th>習得期間</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>GitHub<strong></td>
+      <td>都度</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Nginx<strong></td>
+      <td>約半月</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>Unicorn<strong></td>
+      <td>約半月</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>Capistrano 3<strong></td>
+      <td>約半月</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>Docker / docker-compose<strong></td>
+      <td>約半月</td>
+      <td>ポートフォリオに使用</td>
+    </tr>
+    <tr>
+      <td><strong>Terraform<strong></td>
+      <td>-</td>
+      <td>就業準備の為学習（未使用）</td>
+    </tr>
+    <tr>
+      <td><strong>Pro＊c<strong></td>
+      <td>-</td>
+      <td>就業準備の為学習（未使用）、 独学</td>
+    </tr>
+    <tr>
+      <td><strong>Heroku<strong></td>
+      <td>都度</td>
+      <td>初期ポートフォリオ作成時使用</td>
+    </tr>
+    <tr>
+      <td><strong>Apache<strong></td>
+      <td>都度</td>
+      <td>初期ポートフォリオ作成時使用</td>
+    </tr>
+    <tr>
+      <td><strong>Tomcat<strong></td>
+      <td>都度</td>
+      <td>初期ポートフォリオ作成時使用</td>
+    </tr>
+  </tbody> 
 </table>
 
 
@@ -241,12 +317,11 @@ Sec-il-n<br>
 
 **その他の資格**<br>
  全国経理教育協会　簿記能力検定試験　3級、２級・１級(工業・商業)<br>
- 建設業経理士検定試験　３級<br>
+ 建設業経理士検定試験　2級<br>
 
  普通自動車第一種　運転免許（AT限定） <br>
 
 ## Portfolio
-![demo](https://github.com/Sec-il-n/resume_auther_public/blob/main/suggest_projyect_demo.gif)<br>
 [http://35.72.239.105/](http://35.72.239.105/)<br>
 [README](https://github.com/Sec-il-n/sugget_cd_ci/blob/cd_ci/README.md)
 
@@ -267,4 +342,6 @@ JUnit実践入門 ── 体系的に学ぶユニットテストの技法<br>
 スッキリわかるサーブレット&JSP入門<br>
 国本大悟 (著)<br>
 3ステップでしっかり学ぶ Java入門 [改訂2版]<br>
-株式会社アンク (著)<br>
+株式会社アンク (著)<br><br>
+　他
+                                          
