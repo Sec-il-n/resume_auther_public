@@ -1,0 +1,4 @@
+・アソシエーション
+https://blog.ryskit.com/entry/2018/01/27/195442
+has_many :~
+belongs_to :~ ,optional: true <- belongs_toの外部キーのnilを許可

@@ -1,0 +1,51 @@
+3/24
+Users::RegistrationsController
+error: ArgumentError  First argument in form cannot contain nil or be empty
+
+  new_user_registration_path(resource_name)
+                              ↪︎　url:sign_up.user
+  ->
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+●カスタマイズで管理モデルを作成し、scope経由の設定をした場合、
+
+・そのままだとuser::registration_controllerを見に行かない
+1.registration_controllerのアクション部分を有効にする
+2. 削除
+
+・_linksでどのviewが呼び出されているのか
+devise_for: :users,  controllers:
+で指定したコントローラが呼び出すview（usr/registration・session/~）とそれ以外(devise/)、両方(shared)をそれぞれ把握→i18nする
+
+・StringParameterの設定
+  設置の場面３パターン
+  ・sign_in (Devise::SessionsController#create)
+  ・sign_up (Devise::RegistrationsController#create)
+  ・account_update (Devise::RegistrationsController#update)
+
+  方法
+  ・ApplicationControllerに追加分を
+    devise_parameter_sanitizer.permit(:sign_up, keys:  [:username])
+  として宣言し、before_action  if: :devise_controller?
+  と記載
+
+  ・Parameterを完全にカスタマイズする
+  devise_parameter_sanitizer.permit(:sign_up) do |user_params|
+     user_params.permit({ roles: [] }, :email, :password, :password_confirmation)
+   end
+
+  ※他ネストの記載方など参照：https://github.com/heartcombo/devise#strong-parameters
+
+
+●その他
+・ja.ymlはrestartなしで反映される
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+https://qiita.com/jnchito/items/3ef95ea144ed15df3637
+●アクションの例外実装(カスタマイズ)
+「普通に考えると業務エラーは起こりえない場合」や「万一エラーが起きたら処理を中止したい場合」はsaveではなく、save!
+
+「必ずそのデータが存在するはず」という場合はfindやfind_by!
+
+途中でエラーが発生しても続行したいケース→rescue
+ex.メールの一斉送信

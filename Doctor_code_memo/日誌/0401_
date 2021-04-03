@@ -1,0 +1,46 @@
+Ajax
+そのものが技術というわけではなく、既存技術を組み合わせて使用するアプローチ。
+HTML
+XHTML
+CSS
+JavaScript
+DOM
+XML
+
+===========================================================
+https://logmi.jp/tech/articles/323856
+
+3大フレームワーク
+ngular、Vue、React
+https://www.npmtrends.com/angular-vs-react-vs-vue
+
+ビルドシステム
+webpack一強
+
+altJS
+JavaScriptをいったん別の言語で書いてそれをJavaScriptにコンパイル
+TypeScript↑
+CoffeeScript→
+
+表現系ライブラリ
+Flashのようなインタラクティブコンテンツ*を作るためのJavaScriptのフレームワーク
+Three.js
+PixiJS
+
+*双方向コミュニケーション型WEBコンテンツ
+
+
+長いので中断
+============================================================
+https://future-architect.github.io/articles/20201013/
+Vue.js
+使用時ポイント
+・JavaScript or TypeScript
+・Vue2 or Vue3
+・コンポーネントのスタイル
+
+環境構築はVue CLI
+linterを導入
+TypeScript使おう
+Vue3はまだ早い？
+細かい書き方　vue-class-component

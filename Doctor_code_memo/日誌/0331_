@@ -1,0 +1,40 @@
+JQuery
+JavaScriptのライブラリ。。。汎用的で再利用可能な機能・関数をひとまとまりにして提供するもの
+シンプルにJavaScriptを記述できる
+CSS/HTMLに動きをつける
+
+どのブラウザでも使える
+処理が遅くなるケースもある
+  ・コードが短い場合はJavaScriptで記載した方が良い
+  ・jQueryで実装したものがJavaScriptでどのように記述され、処理されるのか、別途しっかりと学習を重ねておくとよい
+
+フレームワークを導入する場合(Vue.js etc)
+処理が競合する場合があるので、JQueryなしで記述する場合が多い
+
+https://www.pasonatech.co.jp/workstyle/column/detail.html?p=2570
+↑　フレームワークとライブラリの分類間違い？
+
+https://career.levtech.jp/guide/knowhow/article/387/
+↓
+その他ライブラリ
+React Node.js
+
+フレームワーク
+AngularJS
+中規模〜大規模開発向け
+学習コスト　高
+双方向データバインディング
+
+Angular
+AngularJSの後継だが互換性はない
+TypeScriptが使用されている
+
+vue.js
+仮想DOMによって高速なレンダリングを実現
+MVCモデルの View 層を扱う
+
+OSSライセンス
+https://www.yoheim.net/blog.php?q=20120914
+BSD　著作権表示／BSDライセンス条文／無保証の旨を記載すれば、自由に使える
+MIT　著作権表示／許諾表示を記載の上、自由に利用できる
+GPL

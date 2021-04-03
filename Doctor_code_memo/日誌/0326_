@@ -1,0 +1,75 @@
+・.gitignoreの書き方
+/*/.DS_Store/*
+
+ERRORS:
+ uninitialized constant Devise::Models::Encryptable
+uninitialized constant
+「定義したクラスを読むことができない」
+
+参考：https://qiita.com/imotan/items/c73fab5ee230114a08b6
+config/initializers/requirements.rb
+初期化時にクラスを読み込む
+
+参考：https://qiita.com/linkss/items/9b005ebc2ef81a39afa2
+devise.rb設定項目
+今回：
+user.rb　devise :encryptableの消し忘れ
+↓↓
+  ===============================================
+  暗号化方式の変更(deviseでbcryptを使用)
+  user.rb
+    devise :encryptable
+
+  migration file
+  t.string :password_salt, null: false, default: ""
+
+  initializer/md5.rb
+require 'digest/md5'
+
+module Devise
+  module Encryptable
+    module Encryptor
+      class Md5 < Base
+        def self.digest(password, stretches, salt, pepper)
+          str = [password, salt].flatten.compact.join
+          Digest::MD5.hexdigest(str)
+        end
+      end
+    end
+  end
+end
+
+
+==================================================
+ERROR:
+ActionController::UnknownFormat in Devise::RegistrationsController#create
+
+https://stackoverflow.com/questions/34344222/actioncontrollerunknownformat-in-deviseregistrationscontrollercreate-due-to
+
+"remove resource_name in your url part"
+
+=================================================
+gitやらかし
+https://qiita.com/muran001/items/dea2bbbaea1260098051
+rebase途中をaboatで消してしまった
+
+$ git reflog
+$ git reset --hard HEAD@{}
+
+.env
+・gitignoreに追記
+$ git rm -r --cached .
+
+・API keyの作り直し
+  ・.envの書き直し
+  ・$ docker-compose run web rails credentials:edit
+・git repository作り直し
+  ・issueの移譲
+  https://docs.github.com/ja/github/managing-your-work-on-github/transferring-an-issue-to-another-repository
+  $ git remote rm origin
+  $ git remote add origin git@~~
+  $ git branch -M main
+  $ git push -u origin main
+=================================================
+
+route53
