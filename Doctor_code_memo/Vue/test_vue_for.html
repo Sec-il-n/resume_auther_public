@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列表示</title>
+    <style>
+      /* -moveが着いたクラスが擬似的に割り当てられる */
+      .flip-list-move {
+        transition: transform 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button v-on:click="shuffle">シャッフル</button>
+      <!-- transition-group 過程を見せる 　tag 実際に生成されるタグ名-->
+      <transition-group name="flip-list" tag="ul">
+        <li v-for="pref in prefs" v-bind:key="pref.name">
+          {{ pref.name }}</li>
+      </transition-group>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          prefs: [
+            {name: '北海道'},
+            {name: '青森県'},
+            {name: '秋田県'},
+            {name: '岩手県'},
+            {name: '山形県'},
+            {name: '福島県'}
+          ]
+        },
+        methods: {
+          shuffle: function() {
+            this.prefs = _.shuffle(this.prefs);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

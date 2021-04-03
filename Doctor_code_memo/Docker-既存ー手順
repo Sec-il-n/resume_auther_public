@@ -1,0 +1,137 @@
+https://qiita.com/kenz-dev/items/b9e716204e0cd0cea447
+
+Dockerfile作成
+  entrypoint.sh作成
+docker-compose     #dockerがinstallされている環境絵でcurl する
+db.yml
+
+$ docker-compose build
+$ docker-compose run web rake db:create RAILS_ENV=development　...1
+    ...*model 0個 migrationfileがない。作成後ー＞
+    $ docker-compose run web rake db:migrate
+$ docker-compose up
+  この状態*(routingも未)で'Yay! You’re on Rails!'が表示される
+
+    1　
+    $ docker-compose logs
+    PG::ConnectionBad: could not translate host name "db" to address: Name or service not known
+    参考
+    https://qiita.com/at-946/items/2fb75cec5355fad4050d
+    ->postgresコンテナにPOSTGRES_PASSWORD設定  docker-compose.yml→db.ymlへ同期
+
+    environment:
+          POSTGRES_USER: 'postgres'
+          POSTGRES_PASSWORD: 'password'
+    ・上記２つの設定は必須
+    ・db.yml
+    default: &default
+      username: postgres
+      password: password
+
+    ・コマンドのミス
+    ・db.ymlのtest環境
+    # host: localhost ->CircleCI導入時にこちらへ変更
+      host: db
+
+----------------------------------------------
+$ docker-compose run web rake db:migrate RAILS_ENV=development
+Creating help_doctor_web_run ... done
+Could not find geocoder-1.6.6 in any of the sources
+Run `bundle install` to install missing gems.
+ERROR: 7
+↓　試したが効果なし
+gemfileに追記した場合？
+https://qiita.com/hokita222/items/49f4ca54835e08fdd6b2#%E5%AF%BE%E5%BF%9C
+$ docker-compose run web bundle install # volumeを更新
+
+
+ Could not find geocoder-1.6.6 in any of the sources (Bundler::GemNotFound)
+結論
+gemfile追記したら作り直す
+ ==>　
+ ＄　docker-compose down -v
+ $　docker-compose build --no-cache
+ $  docker-compose run web rake db:create db:migrate
+ $ docker-compose up
+
+チェックポイント
+　・gemfile.lockを使用することで、どの環境でも同じgem、gemのバージョンを使用することができる
+・bundle install...gemとそのgemに関連するgemをインストール後、gemfile.lockを更新
+*gemfile.lockにあるgemについては、更新しない
+(gemfile.lockに記述されていない、且つgemfileに記述されているgemがある場合更新)
+・bundle update...gemfileを元にgemのインストール,gemfile.lockを更新
+・bundle updateは、本番環境で安易に実行しない
+https://qiita.com/lasershow/items/1a048d03ddaaba98171e#%E3%81%93%E3%82%8C%E3%82%89%EF%BC%92%E3%81%A4%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+
+
+
+https://qiita.com/tearoom6/items/326895f0a35774d70729#image-%E3%81%AE%E7%8A%B6%E6%85%8B%E7%AE%A1%E7%90%86
+https://qiita.com/tearoom6/items/326895f0a35774d70729#case-study
+◎イメージ
+・imageの作成
+$ docker-compose build        Dockfile書き直し
+
+◉コンテナ　　　　　
+docker-composeの構成
+・build　→　image
+・container, volume, networkの作成
+
+container は作成時にこの設定ファイルの内容を取り込む
+→✖︎　再起動　　◯　再作成
+
+buildセクションを書き換えた場合再生成が必要
+
+作成　$ docker-compose create
+起動    start
+  ・コンテナの作成〜起動一括
+  $ docker-compose up
+停止    stop
+破棄    rm
+  ・コンテナの停止〜破棄
+  $ docker-compose down
+
+・image に含めていないファイルを container が利用する
+    ＝＝
+  　・ host などから volume を mount
+  　・ network 経由等で取得
+  => 反映のための image の再作成は不要
+-------------------------------------------------
+$ docker run
+==
+create + start
+
+$ docker exec
+==
+起動中のコンテナ内で、指定したコマンドを実行する
+参考：https://www.memotansu.jp/docker/852/
+--------------------------------------------------
++ credentials
+docker-compose.yml
+web:
+  environment:
+        - EDITOR=vim
+$ docker-compose run web rails credentials:edit
+
+ActiveSupport::MessageEncryptor::InvalidMessage
+https://qiita.com/scivola/items/cc06ddbfd94d3118f693
+
+
+===================================================
+https://qiita.com/suzy1031/items/64598d44b428ccd7abc5
+clear+errorの容疑
+・rails credentials:editコマンド叩いたら勝手に鍵を生成して config/master.key に保存される
+→docker側でEDITOR＝vimを設定した？
+
+  →　clear+影響
+  ・master.keyはrails newした際に作成
+  ・↑を利用してcredentials.yml.encは暗号化・復号される
+  ∴
+  ・新しく生成された鍵は既存のconfig/credentials.yml.encの復号には使えない
+  →解決策
+  credentials.yml.encファイルを削除してrails credentials:editコマンドもう一度うつ
+  -->masterkeyが既にある場合、それが使われる
+  ◉ただし開発初期段階でrails newした時に作成されるconfig/credentials.yml.encと内容に違いがなく問題にならない場合に限る
+====================================================
+コマンド
++ binding.pry
+$ docker attach コンテナ名(docker ps)

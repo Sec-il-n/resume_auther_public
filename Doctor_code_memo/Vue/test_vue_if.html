@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-if</title>
+  </head>
+  <body>
+    <div id="app_3">
+      <!-- ディレクティブ(指令) -->
+      <span v-if="seen">Now you see me</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script type="text/javascript">
+      var app_3 = new Vue({
+        el: "#app_3",
+        data: {
+          // seen: true
+          seen: false
+        }
+      });
+    </script>
+  </body>
+</html>

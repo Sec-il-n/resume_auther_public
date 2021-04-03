@@ -1,0 +1,72 @@
+超重要
+scope
+https://www.tmp1024.com/articles/devise-scope-and-path
+Deviseで「ユーザ管理をする」モデル＊
+$ rails g devise User
+
+scopeがある(を作成する)ことで、
+Deviseで複数のモデルを扱うことができる
+
+[]の中がスコープの部分
+[user]_signed_in?
+
+  例）
+    $ rails g devise User＊
+    user_signed_in?
+  Ⓜ︎さらに管理者ユーザを管理するモデルを作成
+    $ rails g devise Admin＊
+    admin_user_signd_in?
+
+    ----------------------------------------------
+  ルーティング
+  ・devise_forでは、devise内のコントローラで処理をする際に、スコープを設定する
+  routes.rb
+  devise_scope :user do
+    get 'login', to: 'user/sessions#new'
+    post 'login', to: 'user/sessions#create'
+    delete 'signout', to: 'user/sessions#destroy'
+  end
+            ↑　①へのアクセス時コントローラにuserスコープを渡す
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+やり方手順
+＊モデル作成
+$ rails g devise User＊
+
+ユーザー管理用のusersテーブル
+⬇︎　それ用を作成
+$ rails g devise:views users
+$ rails g devise:controllers [users]= scope
+
+∴scopeつきコントローラーがdevise:views usersを呼ぶ
+
+きも
+routes.rb
+devise_for :users, :controllers => {
+  :registrations => 'users/registrations',
+  :sessions => 'users/sessions'
+}
+
+devise_scope :user do
+  get "sign_in", :to => "users/sessions#new"
+  get "sign_out", :to => "users/sessions#destroy"
+end
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+コントローラカスタム
+protected
+  def after_inactive_sign_up_path_for(resource)
+    new_user_session_path
+  end
+  
+Ⓜ︎
+・ confirmableモジュール を有効にしていない場合→after_sign_up_path_for(resource)
+・protected→サブクラスのインスタンスから呼べる、private→呼べない
+・引数忘れ→ERROR:ArgumentError(expected1, ->0)
+--------------メモ　　後削除
+カラムの追加
+$ rails g migration add_name_to_users name:string
+$ rake db:migrate
+インデックスを追加
+$ rails g migration add_name_index_to_users
+
+add_index :users, :name, unique: true

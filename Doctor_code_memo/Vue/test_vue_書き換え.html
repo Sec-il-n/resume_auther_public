@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性の書き換え</title>
+  </head>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+  <body>
+    <div id="app">
+      <!-- <p class="error">エラーです</p> -->
+      <p v-bind:class="error_class">エラーです</p>
+      <img v-bind:src="src_class">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data:{
+          error_class: 'error',
+          src_class: '/Users/secil/Library/Mobile\ Documents/com\~apple\~CloudDocs/photos/test_kq98qtnhvh9k8et.jpg'
+        }
+      });
+    </script>
+  </body>
+</html>

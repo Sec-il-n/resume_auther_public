@@ -1,0 +1,34 @@
+FROM ruby:6.2.5
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+            apt-get install -y \
+            nodejs#curl: htmlで取得
+RUN apt-get update -qq && \#エラー以外は表示しません
+            apt-get install -y \
+            postgresql-client \
+            nodejs \#上記curl -sL で不要？
+            yarn \
+            vim \
+            chromium-driver \-->>下記chromedriverと同じ（？）自動の場合seleniumで操作する
+            libpq-dev \#PostgreSQLクライアントのヘッダやライブラリを含むパッケージ
+            build-essential
+
+RUN　mkdir /help_doctor
+ENV APP_ROOT /help_doctor
+WORKDIR $APP_ROOT
+//変数を定義して、ビルド時にその値を受け渡す
+ARG RAILS_MASTER_KEY
+ENV RAILS_MASTER_KEY ${RAILS_MASTER_KEY}
+
+COPY Gemfile $APP_ROOT/Gemfile
+COPY Gemfile.lock $APP_ROOT/Gemfile.lock
+
+RUN gem install bundler
+RUN bundle install
+
+COPY . $APP_ROOT
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]#一番最初に実行するコマンド
+
+EXPOSE 3000#コンテナがリッスンする
+CMD ["rails", "server", "-b", "0.0.0.0"]#イメージ内部のソフトウェア(rails)実行

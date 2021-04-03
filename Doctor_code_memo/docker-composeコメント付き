@@ -1,0 +1,32 @@
+version: "3"
+services:
+    db:
+      image: postgres
+      # image: postgres:13-alpine
+      ports:
+        - '15432:5432' # ホストからゲスト(コンテナ)へポートフォワード ホストからアクセスする場合　-p 15432、　別コンテナから接続する時　-h db
+        # - '5432' # コンテナ　(ホスト側のポートはランダム)
+      # environment:
+      #   POSTGRES_USER: admin
+      #   POSTGRES_PASSWORD: password
+      #   POSTGRES_DB: help_doctor
+      volumes:
+        - postgresql-data:/var/lib/postgresql/data
+        # - ../../../dic/dic-graduate-docker/dic_issue_graduate/tmp/db:/usr/src #コンテナ内の/usr/src に postgres のバックアップを出力
+    web:
+      build: .
+      command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'" #デフォルトのコマンドを上書き
+      volumes:
+        - .:/help_doctor
+      ports:
+        - "3000:3000"
+      depends_on:
+        - db
+        - chrome
+    chrome:
+      image: selenium/standalone-chrome:latest
+      ports:
+        - 4444:4444
+  volumes:
+    postgresql-data:
+      driver: local

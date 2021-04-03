@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cdn show character & data binding</title>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+    </div>
+    <div id="app_2">
+      <!-- 画面収録 2021-04-02 9.01.15 -->
+      <span v-bind:title="message">Hover your mouse over me for a few seconds to see my dynamicaly...</span>
+    </div>
+    <!-- 痒い初バージョン -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- 本番環境バージョン -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+    <script type="text/javascript">
+        var app = new Vue({
+          el: "#app",
+          data: {
+            message: "いっちゃん"
+          }
+        });
+        var app_2 = new Vue({
+          el: '#app_2',
+          data: {
+            message: 'どりゃーー'
+          }
+        })
+        // hover時'どりゃー'が'変更しました'に変わる
+        // app_2.message = '変更しました'
+    </script>
+  </body>
+</html>
