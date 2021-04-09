@@ -271,7 +271,7 @@ Sec-il-n<br>
       <td>ポートフォリオに使用</td>
     </tr>
     <tr>
-      <td><strong>Terraform<strong></td>
+      <td><strong>TeraTerm<strong></td>
       <td>-</td>
       <td>就業準備の為学習（未使用）</td>
     </tr>
