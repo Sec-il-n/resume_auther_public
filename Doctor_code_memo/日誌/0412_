@@ -1,0 +1,53 @@
+CSS
+https://wunderstand.net/1054/
+親要素から子要素がはみ出す
+box-sizing: border-box;   //widthにborderとpaddingが含まれるのではみ出さない
+
+フォーム
+text-box→データのやり取りが必要な部分
+data() {
+  return {
+    text: '',
+    day: '',
+    reminder: false,
+  }
+}
+↑がdefaultとなり、v-modelでバインドすることで表示（使用）できる
+<input type="text" v-model="text" name="text" placeholder="Add Task" />     ↑data()で指定した値が使える
+
+------------------------------------
+form submit
+@submit 場所Ⓜ︎ハマる  <input type="submit"> ではない
+正）
+<form @submit="onSubmit" >
+@submit="メソッド名"　←クリック時実行される
+
+formのデータを上位コンポーネントへ渡す　上位のコンポーネントで$を書いたコンポーネント名を探す
+this.$emit('add-task', newTask)     Ⓜ︎　this.$emit('toggle-add-task')　データなしOK
+　　　　　　　　　↓
+<AddTask @add-task="addTask" />
+　　　　　　　　　　　　　　↓ methods:
+
+
+1:04:59
+AddTaskFormトグル
+------------------------------------
+event.preventdefault()
+http://js.studio-kingdom.com/javascript/event/prevent_default
+
+テキストフィールドへの、 無効なテキストの入力を停止する
+
+使用例?）
+https://www.ipentec.com/document/javascript-drag-and-drop-prevent-default
+テキストボックスではデフォルトの動作として、ドロップされたハイパーリンクのURLを表示する
+drop イベントのイベントハンドラーの関数内でpreventDefault() メソッドを呼び出すと、デフォルトのドロップされたハイパーリンクのURLを表示する動作をブロックする
+--------------------------------------
+return{
+  showAddTask: false,
+}
+->
+<div v-if="showAddTask">
+--------------------------------------
+JS
+Math.floor 少数の切り捨てを行う
+http://js.studio-kingdom.com/javascript/math/floor

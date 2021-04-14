@@ -1,0 +1,64 @@
+復習
+$emit  ->  'カスタムイベント'
+
+フィルター（データの選択）
+//confirm() -> boolean
+//条件下で確認フォーム
+if(confirm('Are You Sure?')) {
+                      ループの要素
+      this.tasks.filter((task) =>　tsak.id !== id) リセット(初期化？)
+
+}
+
+52:16
+トグルの変更
+
+ arrow function
+ https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+ 通常の function 式の代替構文
+ 引数が 1 つしかない場合、丸括弧 () の使用は任意
+ id => {getID}
+ 引数がない場合、丸括弧を書く
+ () => {statements}
+
+
+ スプレッド構文
+ {...Array}
+ 配列式や文字列などの反復可能オブジェクトを、指定された場所で引数や要素に展開
+                      逆
+{...task, remider: を !task.reminder　に : でなければ task}
+
+流れ
+1.クリックする要素に「@」追加
+@dblclick　　
+@click
+
+2.データが当該vueにない（上位に存在）場合
+→$emit('カスタムイベント', 引数)
+
+上位に渡す場合同義
+<i @click="onDelete()" class="fas fa-times"></i>
+<script>
+export default {
+
+    methods: {
+        onDelete(id) {
+            this.$emit('delete-task', id)
+        },
+    },
+}
+</script>
+
+＝＝
+
+<i @click="$emit('delete-task, task.id')" class="fas fa-times"></i>
+
+3.上位のコンポーネント部分に「@」とemitを記載
+
+4. emit: []追加　
+使用するコンポーネントのexport default内
+
+--------------------------------------------
+５６：２０
+タスク追加のコンポーネント作成
+<input  placeholder="入力の初期表示">

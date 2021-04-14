@@ -1,0 +1,62 @@
+1:08:51
+ボタンsyle変更
+
+↓ v-          true or false
+:showAddTask="showAddTask"    -> 指定されたコンポーネントのpropsで型指定
+              メソッド名
+
+ <Button @btn-click="$emit('toggle-add-task')"　　/>
+          下位層で渡された形　　上位層に渡す形
+
+----------------------------------------------------
+deploy to production server
+
+% npm run build
+-> dist フォルダ内のみデプロイする
+
+ローカルでrunテスト
+% sudo npm i -g serve
+           "global"
+% serve -s dist
+  serve dist folder
+
+  ┌────────────────────────────────────────────────────┐
+  │                                                    │
+  │   Serving!                                         │
+  │                                                    │
+  │   - Local:            http://localhost:5000        │
+  │   - On Your Network:  http://192.168.128.48:5000   │
+  │                                                    │
+  │   Copied local address to clipboard!               │
+  │                                                    │
+  └────────────────────────────────────────────────────┘
+
+※dev server ->:8080
+
+-----------------------------------------------------
+json server install
+
+% npm i json-server
+
+fakeデータ
+/db.jsonファイルに保存したいデータ
+起動
+% json-server --wathch db.json
+routingも
+
+package.json 起動スクリプト (任意のshell scriptを実行するエイリアスコマンドを定義)
+"scripts": {
+    "backend":  "json-server --wathch db.json --port 5000"
+}    ↓＊
+
+  Ⓜ︎jsonファイル表記
+  {}でくくる
+  key value 両方　””
+  ラストの「,」不可≠JS
+
+　　　　　↑＊
+npm run backend　->json server
+npm run serve    ->dev server起動
+
+----------------------------------------------------
+dev server backup

@@ -1,0 +1,79 @@
+v3 cdn
+具体的なバージョンを明記する
+<script src="https://unpkg.com/vue@3.0.5"></script>
+
+変数定義を読み込む→cdnが呼び出す
+<script src="app.js">
+Vue.create
+
+
+--------------------------------------------------
+JS
+同期処理（sync）
+非同期関数（async）
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/async_function
+
+async 関数名(){　　//結果として暗黙の Promise を返す
+  *await
+}
+*
+ await は、非同期関数の中でのみ有効
+ 非同期関数の実行を一時停止し、 Promise の解決を待つ
+ ---------------------------------------------------
+非同期関数、APIを理解する
+
+async/await構文
+ API通信→async/await*1
+ Fetch API = XMLHttpRequest
+          < simple && モダン
+async 関数名(){
+
+    中身が見れる     リクエスト                                bodyの中身が見れる
+    (await          fetch("https://qiita.com/api/v2/items")).json();
+
+    fetchの戻りPromise{}オブジェクト
+  }
+
+
+---------------------------------------------------
+*1 別の書き方
+旧：then()
+しまぶー10:17　https://www.youtube.com/watch?v=QugDLcOo_EE　APIを叩いてみよう
+-----------------------------------------------------
+API ...既存or作成
+
+https://qiita.com/futoase/items/2859a60c8b240da70572
+APIを無料で作成　　　　
+localにjson-serverを立てる(<-node.js)
+jsonファイルを用意しておけばAPIのリクエストを受け取り、また返してくれる
+
+今回
+https://paiza.hatenablog.com/entry/2017/11/30/120%E4%B8%87%E6%9E%9A%E8%B6%85%E3%81%88%E3%81%AE%E7%94%BB%E5%83%8F%E3%82%92JavaScript%E3%81%8B%E3%82%89%E7%84%A1%E6%96%99%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E3%80%8CPixabay_API%E3%80%8D%E3%81%A7%E7%94%BB
+
+https://pixabay.com/api/?key=【APIキー】
+json dataの取得
+＝＞
+https://pixabay.com/api/docs/　で登録しAPI keyを取得し
+fetch('URL')に記載
+→v-on:click ボタンするとresponseが得られる
+
+
+----------------------------------------------------
+しまぶーイントロ　JS重要ポイント
+
+・モジュール データのやり取り
+・npm
+・ビルド（webpack.babel,TypeScript）
+・タスクランナー
+
+・JSのパラダイムシフト
+  インタプリタ型→コンパイル型へ
+  リアルDOM->仮装DOM
+
+?非同期のコールバック関数
+
+--------------------------------------------------
+「CSS1」1996年
+「CSS2」1998年
+「CSS2.1」2011年
+「CSS3」2011年〜

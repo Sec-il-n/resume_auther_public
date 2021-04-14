@@ -1,0 +1,41 @@
+→Vue CLI
+21:36~
+
+インストール　npm(or yarn)
+$ npm install i -g @vue/cli
+関連
+Node.js
+V8* JavaScriptエンジン上に構築された(サーバーサイド)JavaScript実行環境の1つ
+*Googleが開発するオープンソースのJIT Virtual Machine型JavaScriptエンジン(実行環境)
+
+$ vue create vue-プロジェクト名
+Manually select features を選択(defaultは後の設定が面倒)
+crash以外の参考：https://uiuifree.com/blog/develop/vuejs-vuecli-welcome/
+
+$ npm run serve
+localhost:8080
+VScode package json
+"scripts": {
+    "serve": "vue-cli-service serve", //dev server
+    "build": "vue-cli-service build" //build 4 deplyment
+  },
+
+main.js
+エントリーポイント
+App.vue
+------ここまで0405
+setting.json emmit.includeLanguagesの下二行 ？
+or Vetur extentions ？
+
+VScode拡張機能
+*Emmetは、HTMLとCSSのためのスニペットによる入力補間の機能
+https://b1tblog.com/2019/10/17/vue-vscode-addons/
+
+29:13~
+コンポーネントの作成
+Ⓜ︎
+<div>
+  <Header title='Hello'>
+
+コンポーネントにプロパティ値を渡す
+→Header.vue　props:で使用できる(アスタッシュ構文など)

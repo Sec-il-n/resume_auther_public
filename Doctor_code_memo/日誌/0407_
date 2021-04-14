@@ -1,0 +1,65 @@
+Babel や　Webpack(モジュールシステム)を利用している場合のコンポーネントローカル登録
+https://v3.ja.vuejs.org/guide/component-registration.html#%E3%83%A2%E3%82%B7%E3%82%99%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%86%85%E3%81%AE%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E7%99%BB%E9%8C%B2
+
+App.vue = 最上位のコンポーネント
+
+import Header from './components/Header'
+export default {
+  name: 'App',
+  component: {
+    Header,
+  }
+}
+
+App.vueに全体に適用する(?)
+styleを記載
+
+style scope -> スコープ内のタグにのみ適用
+参考：https://vue-loader-v14.vuejs.org/ja/features/scoped-css.html
+
+プロパティ型の指定方法
+https://v3.ja.vuejs.org/guide/component-props.html#%E3%83%95%E3%82%9A%E3%83%AD%E3%83%8F%E3%82%9A%E3%83%86%E3%82%A3%E3%81%AE%E5%9E%8B
+1.文字列の配列として列挙
+props: ['title']
+
+2.オブジェクトとして列挙→key:value
+props: {
+  title: String,
+},
+
+・コンポーネントがドキュメント化される
+・間違った型を渡すとブラウザのコンソールで警告の表示
+
+バインド
+import放出先（import元）の記述がバインドされる
+例）
+Button.vue
+<button @clicl="onClick" :style="{ background: color }" class="btn">{{ text }}</button>
+
+Header.vue(Button.vueをimport)
+<Button text="AddTask" color="green"/>　→このpropがバインドされ表示される
+
+----------------------------------------------------------------
+App.vue
+に（APIから）データを置く
+データを他のコンポーネントからもアクセス可能にする
+
+data() {
+  return {
+    tasks:[]
+  }
+},
+//ライフサイクルフック　
+参考：https://johobase.com/vue-lifecycle/#created
+created() {　//インスタンス作成時、データが初期化された後
+  ・DOMが生成されていないので、DOMの操作を行うことはできない
+  ・リアクティブデータやメソッド等の参照可能
+  this.tasks = [
+    {
+      id:...,
+    },
+    {
+
+    }
+  ]
+}

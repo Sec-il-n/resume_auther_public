@@ -1,0 +1,38 @@
+Tasks.vue
+v-bindループの使い方
+・<div>ではさむ
+・v-for構文→key
+※error：divの外にアスタッシュを記載していた
+<div :key="task.id" v-for="task in tasks">
+　 <h3>{{task.text}}</h3>
+</div>
+
+４３：４３
+https://cdnjs.com/
+font-awesome
+cdnをindex.htmlに追加→<i>classを追記
+
+参考：font-awesome アニメーション
+https://saruwakakun.com/html-css/basic/font-awesome#yon1
+
+今回例
+<i class="fas fa-times"></i>  削除✖︎印
+
+渡されたデータの内容により、classを変更する
+v-bind:class 三項演算子 [ブラケット]
+<:class="[task.reminder ? 'reminder' : '', 'task']">
+                                           default↑
+https://jp.vuejs.org/v2/guide/class-and-style.html#%E9%85%8D%E5%88%97%E6%A7%8B%E6%96%87
+
+
+1.各コンポーネントでv-on:click(@click)指定、
+<i @click="onDelete()" :class="fas fa-times">
+
+2.export default {}のmethods:に指定
+
+コンポーネント間のデータ受け渡し
+$emit('カスタムイベント名')→@カスタムイベント名＝on:click=""
+->UpperLevelのデータ取得？
+
+４９：５８〜
+フィルター
