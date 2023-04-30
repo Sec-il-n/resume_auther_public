@@ -313,7 +313,23 @@ Sec-il-n<br>
     <td><strong>基本情報技術者 午前免除試験 合格<strong></td>
     <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
   </tr>
+  <tr>
+    <td>2023年</td>
+    <td>4月</td>
+    <td><strong>AWS SAA-C03 合格<strong></td>
+    <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
+  </tr>
 </table>
+
+**勉強中**<br>
+<table>
+  <tr>
+    <td>2023年</td>
+    <td>4月〜</td>
+    <td><strong>CCNA<strong></td>
+  </tr>
+</table>
+
 
 **その他の資格**<br>
  全国経理教育協会　簿記能力検定試験  ２級・１級(工業・商業)<br>
