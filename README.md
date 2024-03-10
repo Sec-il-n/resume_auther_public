@@ -20,7 +20,7 @@ Sec-il-n<br>
 <is9405969@gmail.com>
 
 - **自身を体現する言葉、好みの傾向**<br>
-努力　試行錯誤　継続力　傾倒　シンプル　理論　専門職　睡眠　黒にんにく　自然音　<br><br>
+試行錯誤　継続　傾倒　シンプル　理論　専門職　睡眠　自然音　<br><br>
 - **嫌いな言葉、傾向**<br>
 根回し　年功序列　外的要因　視覚的　総合職　女子力　動物性食品　嗜好品　騒音　欲求　<br>
 
@@ -319,14 +319,20 @@ Sec-il-n<br>
     <td><strong>AWS SAA-C03 合格<strong></td>
     <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
   </tr>
+  <tr>
+    <td>2023年</td>
+    <td>8月</td>
+    <td><strong>CCNA 合格<strong></td>
+    <td></td>
+  </tr>
 </table>
 
 **勉強中**<br>
 <table>
   <tr>
-    <td>2023年</td>
-    <td>4月〜</td>
-    <td><strong>CCNA<strong></td>
+    <td>2024年</td>
+    <td>2月〜</td>
+    <td><strong>PHP, Laravel<strong></td>
   </tr>
 </table>
 
