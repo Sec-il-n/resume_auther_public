@@ -17,12 +17,12 @@
 ## Basic Informations
 
 Sec-il-n<br>
-<is9405969@gmail.com>
+<s.ichitani.apply@gmail.com>
 
 - **自身を体現する言葉、好みの傾向**<br>
-試行錯誤　継続　傾倒　シンプル　理論　専門職　睡眠　自然音　<br><br>
+継続　健康第一　臨機応変　理論　専門性　睡眠　自然音　<br><br>
 - **嫌いな言葉、傾向**<br>
-根回し　年功序列　外的要因　視覚的　総合職　女子力　動物性食品　嗜好品　騒音　欲求　<br>
+根回し　年功序列　外見女子力　嗜好品　騒音　欲求　<br>
 
 
 ## Skills
@@ -40,6 +40,12 @@ Sec-il-n<br>
   </thead>
   
   <tbody>
+    <tr>
+      <td><strong>PHP</strong></td>
+      <td>約３ヶ月</td>
+      <td>UDEMYを受講、求人リストアプリケーションをスクラッチで作成中</td>
+      <td></td>
+    </tr>
     <tr>
       <td><strong>Ruby</strong></td>
       <td>約３ヶ月</td>
@@ -331,8 +337,18 @@ Sec-il-n<br>
 <table>
   <tr>
     <td>2024年</td>
-    <td>2月〜</td>
+    <td>10月〜</td>
+    <td><strong>基本情報技術者試験<strong></td>
+  </tr>
+  <tr>
+    <td>2025年</td>
+    <td>5月〜</td>
     <td><strong>PHP, Laravel<strong></td>
+  </tr>
+  <tr>
+    <td>2025年</td>
+    <td>7月〜</td>
+    <td><strong>JSTQB FL<strong></td>
   </tr>
 </table>
 
