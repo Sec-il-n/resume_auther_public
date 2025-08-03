@@ -339,7 +339,7 @@
 
 
 ## Portfolio
-[http://35.72.239.105/](http://35.72.239.105/)<br>
+http://35.72.239.105/<br>　　※現在停止中。ソースコード、デモンストレーションは下記ご参照ください。
 [README](https://github.com/Sec-il-n/sugget_cd_ci/blob/cd_ci/README.md)
 
 
