@@ -13,20 +13,7 @@
 - [Portfolio](#portfolio)
 - [References](#references)
 
-
-## Basic Informations
-
-Sec-il-n<br>
-<s.ichitani.apply@gmail.com>
-
-- **自身を体現する言葉、好みの傾向**<br>
-継続　健康第一　臨機応変　理論的　機能性　専門性　睡眠　自然音　<br><br>
-- **嫌いな言葉、傾向**<br>
-根回し　年功序列　外見　女子力　嗜好品　騒音　欲求　<br>
-
-
 ## Skills
-
 #### Languages
 
 <table>
@@ -89,10 +76,7 @@ Sec-il-n<br>
       <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
     </tr>
   </tbody>
-</table>
- 
-        
-
+</table>   
 
 #### FrameWorks
 
@@ -123,8 +107,6 @@ Sec-il-n<br>
   </tbody> 
 </table>
 
-
-
 #### RDB
 <table>
   <thead>
@@ -147,7 +129,6 @@ Sec-il-n<br>
     </tr>
   </tbody>
 </table>
-
 
 #### TestFrameWorks
 <table>
@@ -181,7 +162,6 @@ Sec-il-n<br>
   </tbody>
 </table>
 
-
 #### CD CI
 <table>
   <thead>
@@ -204,7 +184,6 @@ Sec-il-n<br>
     </tr>
   </tbody> 
 </table>
-
 
   #### AWS
 <table>
@@ -238,8 +217,6 @@ Sec-il-n<br>
     </tr>
   </tbody> 
 </table>
-
-
 
 #### TheOthers
 <table>
@@ -360,12 +337,13 @@ Sec-il-n<br>
  普通自動車第一種　運転免許（AT限定） <br>
  ネバダ州立大学公認　ピラティス指導者資格<br>
 
+
 ## Portfolio
 [http://35.72.239.105/](http://35.72.239.105/)<br>
 [README](https://github.com/Sec-il-n/sugget_cd_ci/blob/cd_ci/README.md)
 
-## References
 
+## References
 プロを目指す人のためのRuby入門 言語仕様からテスト駆動開発・デバッグ技法まで<br>
 伊藤 淳一 (著)<br>
 新・標準プログラマーズライブラリ C言語 ポインタ完全制覇 <br>
@@ -388,4 +366,14 @@ C言語プログラミング能力認定試験　3級、2級過去問題集<br>
 情報処理能力認定委員会 (著)<br>
 <br>
 　他
-                                          
+
+                                      
+## Basic Informations
+
+Sec-il-n<br>
+<s.ichitani.apply@gmail.com>
+
+- **自身を体現する言葉、好みの傾向**<br>
+継続　健康第一　臨機応変　理論的　機能性　専門性　睡眠　自然音　<br><br>
+- **嫌いな言葉、傾向**<br>
+根回し　年功序列　外見　女子力　嗜好品　騒音　欲求　<br>
