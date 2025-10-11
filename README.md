@@ -45,7 +45,7 @@
     <tr>
       <td><strong>JavaScript</strong></td>
       <td>約１ヶ月</td>
-      <td>ポートフォリオに一部使用</td>
+      <td>ポートフォリオ(<a href="https://github.com/Sec-il-n/sugget_cd_ci/tree/cd_ci">ソースコード</a>）に一部使用</td>
       <td></td>
     </tr>
     <tr>
