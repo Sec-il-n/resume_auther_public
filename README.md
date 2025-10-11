@@ -30,7 +30,10 @@
     <tr>
       <td><strong>PHP</strong></td>
       <td>約３ヶ月</td>
-      <td>UDEMYを受講、求人リストアプリケーションをスクラッチで作成中</td>
+      <td>
+        UDEMYを受講、求人リストアプリケーションをスクラッチで作成中<br>
+        <a href="https://github.com/Sec-il-n/workopa-php">https://github.com/Sec-il-n/workopa-php</a>
+      </td>
       <td></td>
     </tr>
     <tr>
