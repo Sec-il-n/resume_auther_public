@@ -39,7 +39,7 @@
     <tr>
       <td><strong>Ruby</strong></td>
       <td>約３ヶ月</td>
-      <td>ポートフォリオにメインで使用</td>
+      <td>[ポートフォリオ](https://github.com/Sec-il-n/workopa-php)にメインで使用</td>
       <td><a href="https://github.com/Sec-il-n/resume_auther/blob/main/README.md#references">References</a></td>
     </tr>
     <tr>
