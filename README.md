@@ -133,17 +133,23 @@
   </tbody>
 </table>
 
-#### TestFrameWorks
+#### TestFrameWork
 <table>
   <thead>
     <tr>
-      <th>TestFrameWorks</th>
+      <th>TestFrameWork</th>
       <th>習得期間</th>
       <th>備考</th>
       <th>参考文献</th>
     </tr>
   </thead>
   <tbody> 
+    <tr>
+      <td><strong>Playwrigt<strong></td>
+      <td>約2ヶ月</td>
+      <td>自己学習で使用</td>
+      <td></td>
+    </tr>
     <tr>
       <td><strong>RSpec、Capybara<strong></td>
       <td>約1ヶ月</td>
@@ -163,6 +169,24 @@
       <td></td>
     </tr>
   </tbody>
+</table>
+
+#### AI Coding Assistants
+<table>
+  <thead>
+    <tr>
+      <th>AI Coding Assistants</th>
+      <th>習得期間</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><strong>Cursor<strong></td>
+      <td>約2ヶ月</td>
+      <td>自己学習に使用</td>
+    </tr>
+  </tbody> 
 </table>
 
 #### CD CI
@@ -311,24 +335,26 @@
     <td><strong>CCNA 合格<strong></td>
     <td></td>
   </tr>
+  <tr>
+    <td>2026年</td>
+    <td>1月</td>
+    <td><strong>JSTQB Foundation Level 合格<strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2026年</td>
+    <td>9月</td>
+    <td><strong>JSTQB Advanced Level Test Analyst 合格<strong></td>
+    <td></td>
+  </tr>
 </table>
 
 **勉強中**<br>
 <table>
   <tr>
-    <td>2024年</td>
-    <td>10月〜</td>
-    <td><strong>基本情報技術者試験<strong></td>
-  </tr>
-  <tr>
-    <td>2025年</td>
-    <td>5月〜</td>
-    <td><strong>PHP, Laravel<strong></td>
-  </tr>
-  <tr>
-    <td>2025年</td>
-    <td>7月〜</td>
-    <td><strong>JSTQB FL<strong></td>
+    <td>2026年</td>
+    <td>9月〜</td>
+    <td><strong>Foundation Level Syllabus AI-Testing<strong></td>
   </tr>
 </table>
 
@@ -378,6 +404,6 @@ Sec-il-n<br>
 <s.ichitani.apply@gmail.com>
 
 - **自身を体現する言葉、好みの傾向**<br>
-継続　健康第一　臨機応変　理論的　機能性　専門性　睡眠　自然音　<br><br>
+継続　健康　臨機応変　理論的　機能性　専門性　睡眠　自然音　<br><br>
 - **嫌いな言葉、傾向**<br>
-根回し　年功序列　外見　女子力　嗜好品　騒音　欲求　<br>
+根回し　年功序列　外見　女子力　騒音　欲求　<br>
